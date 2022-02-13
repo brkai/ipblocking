@@ -20,6 +20,6 @@ Therfore there's a second one:
 'ipblocking-ipset.sh' wich uses ipset (https://ipset.netfilter.org/) out of the Ubuntu-sources.
 
 I'd be happy to help someone with my work, but for sure there are several todos.
-If you like to contribute and (maybe) extend the scripts with IP6 (or other improvements), i'll gladly add you as a contributor.
+If you like to collaborate and (maybe) extend the scripts with IP6 (or other improvements), i'll gladly add you as a collaborator.
 
 Cheers Kai
