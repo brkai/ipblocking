@@ -13,8 +13,7 @@
 ## currently i'm not working with ip6tables because i don't need it
 ## feel free to contribute and extend the script(s)
 
-datadir=/media/raid/scheduledtasks/ipblocking-data
-
+datadir=[your directory for the downloaded and temp files]
 
 # quick and dirty preparation of iptables
 iptables -D INPUT -j blocklist48
@@ -38,7 +37,6 @@ echo $datadir
 # access to the newly created files for everyone
 umask 000
 # Local filname and URL for all IP's reported within last 48 hrs
-#fblacklist48h=$datadir/textdatei.txt
 fblacklist48h=$datadir/all.blocklist.de.txt
 url48h="https://lists.blocklist.de/lists/all.txt"
 # Local filname for all IP's known for ~ 2 month and >=5000 reports
