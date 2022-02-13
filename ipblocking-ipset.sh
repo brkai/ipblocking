@@ -16,7 +16,7 @@
 
 
 
-datadir=/media/raid/scheduledtasks/ipblocking-data
+datadir=[your directory for the downloaded and temp files]
 
 # /etc/iptables/ipsets
 # is the default-file when installing ipset-persistent under debian or ubuntu
@@ -48,7 +48,6 @@ iptables -I INPUT -m set --match-set blocklistLT src -j DROP
 # access to the newly created files for everyone
 umask 000
 # Local filname and URL for all IP's reported within last 48 hrs
-#fblacklist48h=$datadir/textdatei.txt
 fblacklist48h=$datadir/all.blocklist.de.txt
 url48h="https://lists.blocklist.de/lists/all.txt"
 # Local filname for all IP's known for ~ 2 month and >=5000 reports
