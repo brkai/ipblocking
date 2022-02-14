@@ -23,3 +23,6 @@ I'd be happy to help someone with my work, but for sure there are several todos.
 If you like to collaborate and (maybe) extend the scripts with IP6 (or other improvements), i'll gladly add you as a collaborator.
 
 Cheers Kai
+
+ToDo:
+Currently there's no errorhandling.....
