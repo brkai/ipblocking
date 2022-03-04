@@ -24,5 +24,9 @@ If you like to collaborate and (maybe) extend the scripts with IP6 (or other imp
 
 Cheers Kai
 
+
+Fixed:
+2022-03-04: Check if downloaded files are there and have content, if not: Just exit
+
 ToDo:
-Currently there's no errorhandling.....
+Maybe refine error-handling
