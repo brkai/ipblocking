@@ -59,6 +59,14 @@ mv -vf  $fblacklistlt  $fblacklistlt.last
 curl $url48h -o $fblacklist48h
 curl $urllt -o $fblacklistlt
 
+# if something went wrong with the downloads just exit with 1
+[[ -f "$fblacklist48h" ]] || exit 1
+[[ -f "$fblacklistlt" ]] || exit 1
+
+# if one of the downbloaded files is empty: exit with 1 also
+grep -q '[^[:space:]]' "$fblacklist48h" || exit 1
+grep -q '[^[:space:]]' "$fblacklistlt" || exit 1
+
 # remove IP-v6 adresses
 sed -i '/:/d' $fblacklist48h
 sed -i '/:/d' $fblacklistlt
